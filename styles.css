@@ -25,7 +25,7 @@ body{
     font-size: 22px;
     list-style: none;
     display: flex;
-    width: 600px;
+    width: 700px;
     justify-content: space-between;
 }
 
@@ -185,6 +185,8 @@ body{
 
 .section__services{
     background-color: rgba(0, 0, 0, .9);
+    border-bottom: 3px solid #25b5d9;
+    padding-bottom: 50px;
 }
 
 .services__title{
@@ -280,6 +282,54 @@ body{
     background-color: #333;
     text-decoration: none;
     color: #fffff0;
+}
+
+/* ----------SECTION METODOLOGIA---------- */
+
+.section__metod{
+    background-color: #fffff0;
+    border-bottom: 3px solid #25b5d9;
+}
+
+.section__metod__title{
+    font-size: 60px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.metod__container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.metod__container__item{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.metod__img img{
+    width: 250px;
+    padding: 15px;
+}
+
+.metod__parrafo__container{
+    padding: 15px;
+}
+
+.metod__parrafo__title{
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.metod__parrafo{
+    width: 650px;
+    text-align: justify;
+    font-size: 18px;
 }
 
 
