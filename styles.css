@@ -54,9 +54,11 @@ body{
 
 .header__img{
     position: absolute;
-    left: 50px;
+    left: 100px;
     height: 100%;
+    padding: 5px;
 }
+
 
 
 /* ----------SECTION INFO---------- */
@@ -81,6 +83,14 @@ body{
     height: 100%;
 }
 
+.info__logo img{
+    width: 300px;
+    position: relative;
+    z-index: 10;
+    top: -80px;
+    
+}
+
 .info__container{
     position: relative;
     z-index: 10;
@@ -89,11 +99,12 @@ body{
 
 .info__title{
     color: #fffff0;
-    font-family: 'Roboto Slab', serif;
+    /* font-family: 'Roboto Slab', serif; */
     font-weight: 300;
-    font-size: 90px;
+    font-size: 80px;
     display: flex;
     align-items: center;
+    margin-bottom: 100px;
 }
 .likes{
     color: #dc281e;
@@ -110,7 +121,7 @@ body{
 .info__btn{
     position: relative;
     text-transform: uppercase;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     padding: 25px;
     font-size: 20px;
     border-radius: 3px;
@@ -332,6 +343,106 @@ body{
     font-size: 18px;
 }
 
+/* ----------SECTION CONTACTO---------- */
+
+.section__contact{
+    background-color: rgba(0, 0, 0, .9);
+    border-bottom: 3px solid #25b5d9;
+}
+
+.contact__container{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    color: #fffff0;
+    padding: 50px 0;
+}
+
+.contact__redes h3{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    width: 60%;
+}
+
+.contact__redes__parrafo{
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
+    width: 85%;
+}
+
+.redes__container{
+    margin-bottom: 20px;
+}
+
+.redes__container img{
+    width: 80px;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.redes__container a {
+    margin-left: 10px;
+}
+
+.contact__aditional p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.contact__aditional i {
+    margin-right: 10px;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form label{
+    font-size: 22px;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.form__btn{
+    width: 200px;
+    font-size: 22px;
+    padding: 15px;
+    margin-top: 20px;
+    margin: 25px auto 0 auto;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #fffff0;
+    font-weight: 700;
+    transition: .5s;
+    cursor: pointer;
+}
+.form__btn:hover{
+    background-color: #25b5d9;
+    color: #fffff0;
+}
+
+.contact__form input{
+    height: 45px;
+    width: 500px;
+    padding-left: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.contact__form textarea {
+    padding:5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
 
 
 /* ----------MEDIA QUERYS---------- */
