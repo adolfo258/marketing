@@ -1,4 +1,5 @@
 *{
+    scroll-behavior: smooth;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -8,9 +9,13 @@ body{
 }
 
 /* ----------HEADER---------- */
-
+.header__false{
+    height: 10vh;
+    background-color: rgba(0, 0, 0, .95);
+}
 .header{
-    position: relative;
+    position: fixed;
+    top: 0;
     z-index: 100;
     min-height: 10vh;
     width: 100%;
@@ -18,6 +23,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .5s;
+}
+
+.header.active{
+    min-height: 60px;
+    opacity: .95;
 }
 
 .header__list{
@@ -92,7 +103,6 @@ body{
 .info__container{
     position: relative;
     z-index: 10;
-
 }
 
 .info__title{
@@ -103,7 +113,6 @@ body{
     z-index: 10;
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
 }
 .likes{
     color: #dc281e;
@@ -166,6 +175,7 @@ body{
 /* ----------SECTION ABOUT---------- */
 
 .section__about{
+    padding-top: 35px;
     border-bottom: 3px solid #25b5d9;
     background-color: #fffff0;
 }
@@ -194,6 +204,7 @@ body{
 /* ----------SECTION SERVICES---------- */
 
 .section__services{
+    padding-top: 20px;
     background-color: rgba(0, 0, 0, .9);
     border-bottom: 3px solid #25b5d9;
     padding-bottom: 50px;
@@ -297,6 +308,7 @@ body{
 /* ----------SECTION METODOLOGIA---------- */
 
 .section__metod{
+    padding-top: 20px;
     background-color: #fffff0;
     border-bottom: 3px solid #25b5d9;
 }
@@ -345,6 +357,7 @@ body{
 /* ----------SECTION CONTACTO---------- */
 
 .section__contact{
+    padding-top: 20px;
     background-color: rgba(0, 0, 0, .9);
     border-bottom: 3px solid #25b5d9;
 }
