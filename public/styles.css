@@ -625,6 +625,7 @@ body{
 }
 
 @media screen and (max-width:450px){
+
     .header.active{
         min-height: 40px;
     }
@@ -672,14 +673,20 @@ body{
 
     .metod__parrafo{
         font-size: 16px;
+        text-align: justify;
     }
 
     .contact__redes__parrafo{
         font-size: 14px;
+        width: 100%;
     }
 
     .contact__form label{
         font-size: 18px;
+    }
+
+    .contact__redes h3{
+        width: 100%;
     }
 
     .footer__p__web{
