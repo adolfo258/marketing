@@ -76,7 +76,7 @@ body{
 
 .section__info{
     position: relative;
-    background-image: url(/assets/pexels-photo-3740390.jpeg);
+    background-image: url(pexels-photo-3740390.jpeg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -181,17 +181,16 @@ body{
 }
 
 .about__container{
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
 }
 
 .about__title{
-    margin: 0 auto;
    font-family: 'Roboto Slab', serif;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 30px;
    padding: 30px 0 30px 0;
-   width: 550px;
+   text-align: center;
 }
 
 .about__parrafo{
@@ -234,7 +233,7 @@ body{
     height: 300px;
     background-color: rgb(255, 255, 240);
     display: flex;
-    width: 45%;
+    width: 43%;
     margin: 30px 0;
 }
 .card__img img{
@@ -349,7 +348,6 @@ body{
 }
 
 .metod__parrafo{
-    width: 650px;
     text-align: justify;
     font-size: 18px;
 }
@@ -471,9 +469,13 @@ body{
     align-items: center;
 }
 
-.footer__container p {
+.footer__p__web {
     color: #515A5A ;
     font-size: 18px;
+}
+
+.footer__p__movil{
+    display: none;
 }
 
 .footer img {
@@ -483,7 +485,84 @@ body{
 
 /* ----------MEDIA QUERYS---------- */
 
+@media screen and (max-width:1200px){
+
+    .metod__container{
+        width: 90%;
+    }
+
+
+    .metod__parrafo__title{
+        font-size: 26px;
+    }
+
+    .metod__parrafo{
+        font-size: 16px;
+    }
+
+    .metod__img img{
+        width: 200px;
+    }
+
+
+    .header__list{
+        width: 500px;
+        font-size: 16px;
+    }
+
+    .info__title{
+        font-size: 60px;
+    }
+
+    .contact__container{
+        width: 85%;
+    }
+
+    .contact__redes__parrafo{
+        font-size: 16px;
+    }
+
+    .contact__redes h3{
+        font-size: 22px;
+    }
+    
+    .contact__aditional p {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width:992px){
+
+    .metod__container__item{
+        display: block;
+    }
+
+    .metod__parrafo{
+    }
+
+    .metod__img img{
+        display: none;
+    }
+
+    .about__title{
+        font-size: 26px;
+    }
+
+    .about__parrafo{
+        font-size: 18px;
+    }
+    .info__title i {
+        font-size: 20px;
+    }
+
+    .info__title{
+        font-size: 40px;
+    }
+
+    .header__img{
+        display: none;
+    }
+
     .card__container{
         width: 100%;
         flex-direction: column;
@@ -493,34 +572,122 @@ body{
     .card{
         width: 450px;
     }
+
+    .contact__container{
+        flex-direction: column;
+    }
+
+    .contact__form input{
+        width: 100%;
+    }
+
+    .contact__redes{
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #25b5d9;
+    }
 }
 
 @media screen and (max-width:768px){
-  .card{
+    .metod__container{
+       width: 100%;
+    }
+
+    .services__title{
+        font-size: 45px;
+    }
+    .card{
       max-width: 350px;
       flex-direction: column;
       height: auto;
   }
 
-  .card__img{
+    .card__img{
       position: relative;
   }
 
-  .card__img,
-  .card:hover .card__img{
+    .card__img,
+    .card:hover .card__img{
       width: 100%;
       height: 200px;
       left: 0;
   }
 
-  .card__img img,
-  .card:hover .card__img img{
+    .card__img img,
+    .card:hover .card__img img{
       max-width: 100px;
   }
 
-  .card__content{
+    .card__content{
       position: relative;
       width: 100%;
   }
+}
+
+@media screen and (max-width:450px){
+    .header.active{
+        min-height: 40px;
+    }
+
+    .header__list{
+        width: 350px;
+        font-size: 12px;
+    }
+
+    .info__logo img{
+        width: 200px;
+    }
+
+    .info__title{
+        font-size: 16px;
+    }
+    .info__title i {
+        font-size: 12px;
+        margin: 0 10px 0 15px ;
+    }
+
+    .about__container{
+        width: 85%;
+    }
+
+    .about__title{
+        font-size: 18px;
+    }
+
+    .about__parrafo{
+        font-size: 14px;
+    }
+
+    .services__title{
+        font-size: 28px;
+    }
+
+    .section__metod__title{
+        font-size: 28px;
+    }
+
+    .metod__parrafo__title{
+        font-size: 20px;
+    }
+
+    .metod__parrafo{
+        font-size: 16px;
+    }
+
+    .contact__redes__parrafo{
+        font-size: 14px;
+    }
+
+    .contact__form label{
+        font-size: 18px;
+    }
+
+    .footer__p__web{
+        display: none;
+    }
+
+    .footer__p__movil{
+        display: block;
+    }
 }
 
