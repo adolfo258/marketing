@@ -339,7 +339,7 @@ body{
 }
 
 .metod__parrafo__container{
-    padding: 15px;
+    padding: 15px 35px;
 }
 
 .metod__parrafo__title{
@@ -492,6 +492,9 @@ body{
 
     .contact__container{
         width: 85%;
+    }
+    .metod__container{
+        width: 80%;
     }
 }
 
