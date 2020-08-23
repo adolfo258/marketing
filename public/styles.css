@@ -95,7 +95,7 @@ body{
 }
 
 .info__logo img{
-    width: 300px;
+    width: 400px;
     position: relative;
     z-index: 10;
 }
@@ -133,13 +133,16 @@ body{
     padding: 25px;
     font-size: 20px;
     border-radius: 3px;
-    outline: none;
+    font-weight: 400;
     color: #fffff0;
     background-color: rgba(37, 181, 217, .7);
     transition: .5s;
     cursor: pointer;
     border: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
+
 .info__btn::after{
     content: '';
     position: absolute;
@@ -230,7 +233,7 @@ body{
 .card{
     border: 1px solid #25b5d9;
     position: relative;
-    height: 300px;
+    min-height: 300px;
     background-color: rgb(255, 255, 240);
     display: flex;
     width: 43%;
@@ -280,14 +283,19 @@ body{
 }
 
 .card__content{
-    position: absolute;
-    right: 0;
+    position: relative;
+    right: -85px;
     width: calc(100% - 85px);
     height: 100%;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card__content p {
+    line-height: 20px;
+    text-align:justify;
 }
 
 .card__content h3 {
@@ -326,6 +334,7 @@ body{
 }
 
 .metod__container__item{
+    width: 95%;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -334,12 +343,12 @@ body{
 }
 
 .metod__img img{
-    width: 250px;
+    width: 175px;
     padding: 15px;
 }
 
 .metod__parrafo__container{
-    padding: 15px 35px;
+    padding: 15px 90px;
 }
 
 .metod__parrafo__title{
@@ -347,9 +356,9 @@ body{
     font-size: 32px;
 }
 
-.metod__parrafo{
+.metod__parrafo{    
     text-align: justify;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /* ----------SECTION CONTACTO---------- */
@@ -594,9 +603,29 @@ body{
 }
 
 @media screen and (max-width:768px){
+    .info__title{
+        font-size: 30px;
+    }
+
+    .info__title i {
+        font-size: 12px;
+        margin: 0 10px 0 15px ;
+    }
+
+    .about__container{
+        width: 85%;
+    }
 
     .metod__container{
        width: 100%;
+    }
+
+    .metod__container__item{
+        margin: 0 auto;
+    }
+
+    .metod__parrafo__container{
+        padding: 15px 15px;
     }
 
     .services__title{
@@ -628,9 +657,17 @@ body{
       position: relative;
       width: 100%;
   }
+
+  .footer__p__web{
+    display: none;
 }
 
-@media screen and (max-width:450px){
+.footer__p__movil{
+    display: block;
+}
+}
+
+@media screen and (max-width:550px){
 
     .header.active{
         min-height: 40px;
@@ -648,14 +685,8 @@ body{
     .info__title{
         font-size: 16px;
     }
-    .info__title i {
-        font-size: 12px;
-        margin: 0 10px 0 15px ;
-    }
 
-    .about__container{
-        width: 85%;
-    }
+    
 
     .about__title{
         font-size: 18px;
@@ -699,12 +730,6 @@ body{
         width: 70px;
     }
 
-    .footer__p__web{
-        display: none;
-    }
-
-    .footer__p__movil{
-        display: block;
-    }
+    
 }
 
