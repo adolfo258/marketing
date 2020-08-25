@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capibara Marketing Digital</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/carpinchoengrosado.png">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
 <body>
+    <div class="whasap__icon__web">
+        <a href="https://api.whatsapp.com/send?phone=543517477280&text=Hola!" target="_blank"><img src="assets/whatsapp.png" alt="whatsapp"></a>
+    </div>
+    <a class="whasap__icon__movil" href="https://api.whatsapp.com/send?phone=543517477280&text=Hola!">
+        <img src="assets/whatsapp.png" alt="whatsapp">
+        <p>Escribinos!</p>
+    </a>
     <div id="home" class="header__false"></div>
     <header id="header" class="header">
         <img id="headerImg" class="header__img" src="assets/carpinchoengrosadoblanco.png" alt="brand logo">
@@ -158,11 +166,11 @@
                 </div>
             </div>
             <div>
-                <form action="correo.php" method="POST" class="contact__form" action="">
+                <form action="correo.php" method="post" class="contact__form">
                     <label for="name">Nombre</label>
                     <input type="text" id="name" name="name">
                     <label for="email">Tu email</label>
-                    <input type="email" id="email" name="email" re>
+                    <input type="email" id="email" name="email" required>
                     <label for="cel">Teléfono</label>
                     <input type="number" id="cel" name="cel">
                     <label for="textArea">Dejanos un mensaje</label>
@@ -179,6 +187,6 @@
             <p class="footer__p__movil">Copyright <i class="far fa-copyright"></i> 2020 CARPINCHO</p>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -9,6 +9,39 @@ body{
 }
 
 /* ----------HEADER---------- */
+.whasap__icon__web{
+    position: fixed;
+    z-index: 100;
+    top: 300px;
+    left: 20px;
+    
+}
+.whasap__icon__web img{
+    width: 50px;
+}
+
+.whasap__icon__movil{
+    color: #fffff0;
+    text-decoration: none;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 190, 165);
+    width: 100%;
+    display: none;
+    border-top: 2px solid #fffff0;
+}
+.whasap__icon__movil img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+
 .header__false{
     height: 10vh;
     background-color: rgba(0, 0, 0, .95);
@@ -80,7 +113,7 @@ body{
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     min-height: 90vh;
@@ -95,7 +128,7 @@ body{
 }
 
 .info__logo img{
-    width: 400px;
+    width: 350px;
     position: relative;
     z-index: 10;
 }
@@ -127,6 +160,7 @@ body{
 }
 
 .info__btn{
+    display: inline-block;
     position: relative;
     text-transform: uppercase;
     margin-bottom: 40px;
@@ -656,6 +690,7 @@ body{
     .card__content{
       position: relative;
       width: 100%;
+      right: 0;
   }
 
   .footer__p__web{
@@ -668,6 +703,13 @@ body{
 }
 
 @media screen and (max-width:550px){
+    .whasap__icon__web{
+        display: none;
+    }
+
+    .whasap__icon__movil{
+        display: flex;
+    }
 
     .header.active{
         min-height: 40px;
@@ -701,7 +743,7 @@ body{
     }
 
     .section__metod__title{
-        font-size: 28px;
+        font-size: 30px;
     }
 
     .metod__parrafo__title{
@@ -714,7 +756,7 @@ body{
     }
 
     .contact__redes__parrafo{
-        font-size: 14px;
+        font-size: 15px;
         width: 100%;
     }
 

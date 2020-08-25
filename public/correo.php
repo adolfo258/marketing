@@ -14,6 +14,6 @@ $correo .= "Telefono: $cel \n";
 $correo .= "Mensaje: $message";
 
 //Enviar mensaje
-mail($destinatario, $asunto, $correo)
-
+mail($destinatario, $asunto, $correo);
+header('Location:index.html');
 ?>
