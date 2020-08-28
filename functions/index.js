@@ -4,8 +4,8 @@ const nodemailer = require('nodemailer')
 const transport = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-        user: 'adolfotesting@gmail.com',
-        pass: '37525727asd'
+        user: 'baenzcontact@gmail.com',
+        pass: 'baenzforever'
     }
 }) 
 
@@ -21,14 +21,14 @@ exports.contactEmail = functions.database.ref('marketing-digital-2c3b5/{id}').on
 const sendContactEmail = (name, email, cel, message) => {
     return transport.sendMail({
         from: name,
-        to: 'baenzcontact@gmail.com',
+        to: 'baenzmarketingdigital@gmail.com',
         subject: 'Mensaje de contacto',
         html:`
         <h1>Datos de Interesado</h1>
-        <p>${name}</p>
-        <p>cel: ${cel}</p>
-        <p>mensage: ${message}</p>
-        <p>email: ${email}</p>
+        <p><strong>Nombre:</strong>${name}</p>
+        <p><strong>Cel:</strong> ${cel}</p>
+        <p><strong>Mensaje:</strong> ${message}</p>
+        <p><strong>Email:</strong> ${email}</p>
     `
     })
     .then(r => r)
