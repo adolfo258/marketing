@@ -1,7 +1,8 @@
 const header = document.getElementById('header')
 const headerImg = document.getElementById('headerImg')
 const form = document.getElementById('form')
-
+const popupBtn = document.getElementById('popupBtn')
+const popupContainer = document.getElementById('popupContainer')
 
 
 window.addEventListener('scroll', ()=>{
@@ -22,5 +23,13 @@ form.addEventListener('submit', (e) => {
     const message = e.target.message.value
     
     firebase.database().ref('marketing-digital-2c3b5').push({name, email, cel, message})
-    .then(form.reset())
+    .then(() => {
+        form.reset()
+        popupContainer.classList.add('active')
+    })
+    .catch(alert('Ups parece que a ocurrido un error, porfavor intenta mas tarde.'))
+})
+
+popupBtn.addEventListener('click', () => {
+    popupContainer.classList.remove('active')
 })

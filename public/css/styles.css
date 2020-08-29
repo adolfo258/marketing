@@ -6,6 +6,7 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    /* transform: scale(85%) */
 }
 
 /* ----------HEADER---------- */
@@ -243,7 +244,7 @@ body{
     padding-top: 20px;
     background-color: rgba(0, 0, 0, .9);
     border-bottom: 3px solid #25b5d9;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 .services__title{
@@ -267,10 +268,10 @@ body{
 .card{
     border: 1px solid #25b5d9;
     position: relative;
-    min-height: 300px;
+    min-height: 290px;
     background-color: rgb(255, 255, 240);
     display: flex;
-    width: 43%;
+    width: 42%;
     margin: 30px 0;
 }
 .card__img img{
@@ -350,6 +351,7 @@ body{
 
 .section__metod{
     padding-top: 20px;
+    padding-bottom: 50px;
     background-color: #fffff0;
     border-bottom: 3px solid #25b5d9;
 }
@@ -397,10 +399,64 @@ body{
 
 /* ----------SECTION CONTACTO---------- */
 
+.popup__container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .9);
+    width: 100%;
+    height: 100%;
+    z-index: 110;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    display: flex;
+}
+
+/* .popup__container.active{
+    display: flex;
+} */
+
+.popup{
+    text-align: center;
+    background-color: #fffff0;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.popup i {
+    font-size: 80px;
+    color: #58D68D;
+    margin: 10px 0 10px 0;
+}
+
+.popup h4{
+    font-size: 3.5em;
+}
+
+.popup p{
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.popup button{
+    font-size: 1.3em;
+    padding: 10px;
+    background-color: #58D68D;
+    border: none;
+    border-radius: 3px;
+    color: #fffff0;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
 .section__contact{
     padding-top: 20px;
     background-color: rgba(0, 0, 0, .9);
     border-bottom: 3px solid #25b5d9;
+    padding-bottom: 30px;
+    
 }
 
 .contact__container{
@@ -420,7 +476,7 @@ body{
 }
 
 .contact__redes__parrafo{
-    font-size: 20px;
+    font-size: 19px;
     text-align: justify;
     margin-bottom: 30px;
     width: 85%;
@@ -457,7 +513,7 @@ body{
 }
 
 .contact__form label{
-    font-size: 22px;
+    font-size: 19px;
     display: inline-block;
     margin-bottom: 10px;
     padding-left: 5px;
@@ -495,6 +551,8 @@ body{
     padding:5px;
     font-size: 18px;
     border-radius: 5px;
+    resize: vertical;
+    height: 200px;
 }
 
 /* ----------FOOTER---------- */
@@ -693,6 +751,10 @@ body{
       right: 0;
   }
 
+  .popup__container{
+      font-size: 14px;
+  }
+
   .footer__p__web{
     display: none;
 }
@@ -755,6 +817,10 @@ body{
         text-align: justify;
     }
 
+    .popup__container{
+        font-size: 10px;
+    }
+
     .contact__redes__parrafo{
         font-size: 15px;
         width: 100%;
@@ -773,5 +839,31 @@ body{
     }
 
     
+}
+
+@media screen and (max-width:360px){
+    .contact__aditional p {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width:320px){
+    .header__list{
+        width: 315px;
+    }
+    .header__list a{
+        font-size: 10px;
+    }
+    .contact__aditional p {
+        font-size: 13px;
+    }
+    .card{
+        width: 310px;
+    }
+
+    .services__title{
+        font-size: 26px;
+    }
 }
 
