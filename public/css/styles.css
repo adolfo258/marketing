@@ -405,8 +405,8 @@ body{
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, .8);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 110;
     justify-content: center;
     align-items: center;
@@ -417,6 +417,7 @@ body{
 }
 
 .popup{
+    position: relative;
     text-align: center;
     background-color: #fffff0;
     border-radius: 3px;
@@ -582,6 +583,42 @@ body{
     width: 150px;
 }
 
+/* ----------SECTION 404---------- */
+
+.error__container{
+    background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fffff0;
+    height: 100vh;
+}
+
+.error{
+    position: relative;
+    background-color: #25b5d9;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.error__content{
+    position: relative;
+    text-align: center;
+    bottom: 10px;
+}
+
+.error__content h3 {
+    font-size: 5em;
+}
+
+.error__content p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
 
 /* ----------MEDIA QUERYS---------- */
 
@@ -764,6 +801,12 @@ body{
 }
 
 @media screen and (max-width:550px){
+    .error{
+        width: 300px;
+        height: 300px;
+        font-size: 12px;
+    }
+
     .whasap__icon__web{
         display: none;
     }
@@ -815,10 +858,18 @@ body{
         font-size: 16px;
         text-align: justify;
     }
+    
+    /* aumento el height para que no falle en moviles al scrollear*/
 
     .popup__container{
         font-size: 10px;
+        height: 120vh;
     }
+
+    .popup{
+        bottom: 10%;
+    }
+
 
     .contact__redes__parrafo{
         font-size: 15px;
