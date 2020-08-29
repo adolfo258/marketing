@@ -3,6 +3,7 @@ const headerImg = document.getElementById('headerImg')
 const form = document.getElementById('form')
 const popupBtn = document.getElementById('popupBtn')
 const popupContainer = document.getElementById('popupContainer')
+const submitBtn = document.getElementById('submit__btn')
 
 
 window.addEventListener('scroll', ()=>{
@@ -27,7 +28,6 @@ form.addEventListener('submit', (e) => {
         form.reset()
         popupContainer.classList.add('active')
     })
-    .catch(alert('Ups parece que a ocurrido un error, porfavor intenta mas tarde.'))
 })
 
 popupBtn.addEventListener('click', () => {

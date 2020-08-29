@@ -400,22 +400,21 @@ body{
 /* ----------SECTION CONTACTO---------- */
 
 .popup__container{
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(0, 0, 0, .8);
     width: 100%;
     height: 100%;
     z-index: 110;
     justify-content: center;
     align-items: center;
-    transition: .5s;
-    display: flex;
 }
 
-/* .popup__container.active{
+.popup__container.active{
     display: flex;
-} */
+}
 
 .popup{
     text-align: center;
