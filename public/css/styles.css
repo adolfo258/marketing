@@ -6,7 +6,6 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    /* transform: scale(85%) */
 }
 
 /* ----------HEADER---------- */
@@ -605,6 +604,7 @@ body{
     border-radius: 100%;
 }
 
+
 .error__content{
     position: relative;
     text-align: center;
@@ -620,6 +620,10 @@ body{
     margin-bottom: 20px;
 }
 
+.error__content i {
+   font-size: 50px;
+   color: #E74C3C;
+}
 /* ----------MEDIA QUERYS---------- */
 
 @media screen and (max-width:1400px){
