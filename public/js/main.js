@@ -9,7 +9,7 @@ const submitBtn = document.getElementById('submit__btn')
 window.addEventListener('scroll', ()=>{
     let scrollPosition = Math.round(window.scrollY)
     console.log(scrollPosition)
-    if(scrollPosition > 400){
+    if(scrollPosition > 300){
         header.classList.add('active')
     }else{
         header.classList.remove('active')
