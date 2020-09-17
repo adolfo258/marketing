@@ -5,7 +5,6 @@ const popupBtn = document.getElementById('popupBtn')
 const popupContainer = document.getElementById('popupContainer')
 const submitBtn = document.getElementById('submit__btn')
 
-
 window.addEventListener('scroll', ()=>{
     let scrollPosition = Math.round(window.scrollY)
     console.log(scrollPosition)

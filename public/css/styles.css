@@ -19,9 +19,9 @@ body{
     position: fixed;
     z-index: 100;
     top: 300px;
-    left: 20px;
-    
+    left: 20px; 
 }
+
 .whasap__icon__web img{
     width: 50px;
 }
@@ -85,6 +85,7 @@ body{
     text-decoration: none;
     font-weight: 400;
 }
+
 .header__list__item:before{
     content: '';
     position: absolute;
@@ -98,6 +99,7 @@ body{
     opacity: 0;
     transition: .5s;
 }
+
 .header__list__item:hover:before{
     transform: scaleY(1.5);
     opacity: 1;
@@ -106,6 +108,7 @@ body{
 .header__img{
     position: absolute;
     left: 100px;
+    top: 0;
     height: 100%;
     padding: 5px;
     border-radius: 10px;
@@ -325,7 +328,6 @@ body{
 
 .card__content p {
     line-height: 20px;
-    text-align:justify;
 }
 
 .card__content h3 {
@@ -692,7 +694,7 @@ body{
     }
 }
 
-@media screen and (max-width:992px){
+@media screen and (max-width:1100px){
 
     .metod__container__item{
         display: block;
@@ -750,6 +752,14 @@ body{
 }
 
 @media screen and (max-width:768px){
+
+    .header__list__item::before{
+        display: none;
+    }
+
+    .header__list__item:hover:before{
+        display: none;
+    }
 
     .section__info__slogan {
     
@@ -913,7 +923,13 @@ body{
         width: 70px;
     }
 
+    .footer__mercadopago img{
+        width: 100px;
+    }
 
+    .footer__mercadopago p {
+        font-size: 12px;
+    }
 
     
 }
